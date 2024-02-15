@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TriMaker</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../imagenes/favicon.png.ico" type="image/x-icon">
+    <!--BSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+    <!--social media icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Starts Navbar -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../imagenes/logo.png" alt="Logo de la marca, Trimaker">
+            </div>
+            <label for="menu_hamburguesa" class="hamburguer">
+                <i class="fa-solid fa-bars fa-fade fa-xl" style="color: #976d7a;"></i>
+            </i></label>
+            <input class="menu_hamburguesa" type="checkbox" name="" id="menu_hamburguesa">
+            <ul class="nav-links">
+                <li>
+                    <a href="./catalago.html">Catálogo</a>
+                </li>
+                <li>
+                    <a href="./contacto.html">Contáctanos</a>
+                </li>
+                <li>
+                    <a href="./nosotros.html">Nosotros</a>
+                </li>
+            </ul>
+            <section class="icons">
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                 </div>
+                <div class="shopping">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+            </section>
+        </nav>
+    </header>
+    <!-- Ends Navbar -->
+    <!--starts form-->
+    <div class="container">
+        <div>
+            <div>
+                <div class="contact-container">
+                    <h1>Contacto</h1>
+                    <form action="../pages/contacto.html" method="post">
+                        <div class="form-group">
+                            <label for="nombre">Ingresa tu nombre y apellido</label>
+                            <input type="text" id="nombre" name="nombre" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Ingresa tu mail</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Número de contacto</label>
+                            <input type="tel" id="telefono" name="telefono" class="form-control" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--ends form-->
+    <!--stars vídeo-->
+    <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/wNJPN3t3AUk?si=2RIfkDta7kADjHtx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
+    </div>
+    <!--ends vídeo-->    
+    <!--stars footer-->
+    <section class="footer">
+        <nav class="link">
+            <div>
+                <a href="../../index.html">
+                    <img src="../imagenes/logo.png" alt="Logo Trimaker">
+                </a>
+            </div>
+            <div>
+                <button class="my-button">USD</button>
+            </div>
+            <div class="link">
+                <ul>
+                    <h4>Conexiones</h4>
+                    <li>
+                        <a href="https://instagram.com" target="_blank">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="https://facebook.com" target="_blank">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="https://Pinterest.com" target="_blank">Pinterest</a>
+                    </li>
+                    <li>
+                        <a href="https://youtube.com" target="_blank">YouTube</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="link">
+                <ul>
+                    <h4>Fuentes</h4>
+                    <li>
+                        <a href="https://Devolución.com" target="_blank">Política de devolución</a>
+                    </li>
+                    <li>
+                        <a href="https://trackin.com" target="_blank">Sigue tu orden</a>
+                    </li>
+                    <li>
+                        <a href="https://TYCTrimaker.com" target="_blank">Términos y condiciones</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="link">
+                <ul>
+                    <h4>Nosotros</h4>
+                    <li>
+                        <a href="./nosotros.html">Nuestra historia</a>
+                    </li>
+                    <li>
+                        <a href="./contacto.html">Contáctanos</a>
+                    </li>
+                    <li>
+                        <a href="./catalago.html">Catálogo</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <!--ends footer-->
+    <!--links-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

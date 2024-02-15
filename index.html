@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TriMaker</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./src/imagenes/favicon.png.ico" type="image/x-icon">
+    <!--BSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="./src/css/style.css">
+    <!--social media icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Starts Navbar -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./src/imagenes/logo.png" alt="Logo de la marca, Trimaker">
+            </div>
+            <label for="menu_hamburguesa" class="hamburguer">
+                <i class="fa-solid fa-bars fa-fade fa-xl" style="color: #976d7a;"></i>
+            </i></label>
+            <input class="menu_hamburguesa" type="checkbox" name="" id="menu_hamburguesa">
+            <ul class="nav-links">
+                <li>
+                    <a href="./src/pages/catalago.html">Catálogo</a>
+                </li>
+                <li>
+                    <a href="./src/pages/contacto.html">Contáctanos</a>
+                </li>
+                <li>
+                    <a href="./src/pages/nosotros.html">Nosotros</a>
+                </li>
+            </ul>
+            <section class="icons">
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                 </div>
+                <div class="shopping">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+            </section>
+        </nav>
+    </header>
+    <!-- Ends Navbar -->
+    <!--starts introduction-->
+    <section class="encabezado">
+        <div class="text-center">
+            <h1>Formas que hablan: Nuestra galería de Figuras en 3D</h1>
+            <p>Más allá de las líneas, Más allá de la imaginación</p>
+        </div>
+        <div class="d-flex justify-content-center">
+            <button class="my-button" type="button" class="btn btn-secondary">
+                COMPRA AHORA
+            </button>
+        </div>
+        <div class="text-center">
+            <img src="./src/imagenes/header.jpg" class="img-fluid" alt="Impresora 3D creando un macetero ovalado azul con espirales">
+        </div>
+    </section>
+    <!--ends introduction-->
+    <!--starts products-->
+    <main class="main">
+        <section class="container">
+            <h2 class="text-center">Categorías</h2>
+            <div class="row">
+                <div class="col-4">
+                    <img src="./src/imagenes/shingeki-.png" class="img-fluid"
+                        alt="figura de animé attack of titans, impresa en 3D">
+                    <div class="d-flex justify-content-center">
+                        <button class="my-button" type="button" class="btn btn-secondary">
+                            Figuras
+                        </button>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <img src="./src/imagenes/macetero-.webp" class="img-fluid"
+                        alt="3 maceteros geometricos en pirámide de color blanco y negro, impresos en 3D">
+                    <div class="d-flex justify-content-center">
+                        <button class="my-button" type="button" class="btn btn-secondary">
+                            Maceteros
+                        </button>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <img src="./src/imagenes/juguete.jpg" class="img-fluid"
+                        alt="Juguete infantil impreso en 3D con forma de elefante">
+                    <div class="d-flex justify-content-center">
+                        <button class="my-button" type="button" class="btn btn-secondary">
+                            Otros
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--ends products-->
+    <!--starts promo-->
+    <section class="promo">
+        <div class="container">
+            <h2 class="text-center">Descubre la magia de la forma en 3D</h2>
+            <div class="row">
+                <div class="col-4">
+                    <h3>Maceteros</h3>
+                    <p>Nuestro PLA es orgánico hecho con material biodegradable y compostable.</p>
+                    <button class="my-button" type="button" class="btn btn-secondary">
+                        Compra tus favs
+                    </button>
+                </div>
+                <div class="col-4">
+                    <img class="w-100" src="./src/imagenes/blanco.jpg"
+                        alt="Macetero blanco ovalado, impreso en 3D con suculenta">
+                    <h5>White</h5>
+                    <button class="my-button" type="button" class="btn btn-secondary">
+                        20 USD
+                    </button>
+                </div>
+                <div class="col-4">
+                    <img class="w-100" src="./src/imagenes/black.png"
+                        alt="Macetero negro geometrico, impreso en 3D con suculenta y piedras dentro">
+                    <h5>Black</h5>
+                    <button class="my-button" type="button" class="btn btn-secondary">
+                        30 USD
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--ends promo-->
+    <!--starts suscripción-->
+    <section class="suscripcion">
+        <div class="container">
+            <p class="text-center">Ten 15% de descuento en tu próxima orden.</p>
+            <p class="text-center">Suscríbete a nuestras actualizaciones.</p>
+            <div class="d-flex justify-content-center align-items-center">
+                <form action="suscripción.php" method="post" class="d-flex">
+                    <label for="Email">Ingresa tu mail</label>
+                    <input type="email" name="Email" id="Email" required>
+                    <button class="my-button btn btn-secondary" type="button">
+                        <a href="./src/pages/suscripcion.html">Suscríbete</a>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--ends suscripción-->
+    <!--stars footer-->
+    <section class="footer">
+        <nav class="link">
+            <div>
+                <a href="./index.html">
+                    <img src="./src/imagenes/logo.png" alt="Logo Trimaker">
+                </a>
+            </div>
+            <div>
+                <button class="my-button">USD</button>
+            </div>
+            <div class="link">
+                <ul>
+                    <h4>Conexiones</h4>
+                    <li>
+                        <a href="https://instagram.com" target="_blank">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="https://facebook.com" target="_blank">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="https://Pinterest.com" target="_blank">Pinterest</a>
+                    </li>
+                    <li>
+                        <a href="https://youtube.com" target="_blank">YouTube</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="link">
+                <ul>
+                    <h4>Fuentes</h4>
+                    <li>
+                        <a href="https://Devolución.com" target="_blank">Política de devolución</a>
+                    </li>
+                    <li>
+                        <a href="https://trackin.com" target="_blank">Sigue tu orden</a>
+                    </li>
+                    <li>
+                        <a href="https://TYCTrimaker.com" target="_blank">Términos y condiciones</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="link">
+                <ul>
+                    <h4>Nosotros</h4>
+                    <li>
+                        <a href="./src/pages/nosotros.html">Nuestra historia</a>
+                    </li>
+                    <li>
+                        <a href="./src/pages/contacto.html">Contáctanos</a>
+                    </li>
+                    <li>
+                        <a href="./src/pages/catalago.html">Catálogo</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <!--ends footer-->
+    <!--links-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
