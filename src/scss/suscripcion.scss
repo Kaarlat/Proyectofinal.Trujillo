@@ -1,0 +1,41 @@
+@media (min-width:900px){
+    /*suscription*/
+    .suscripcion {
+        margin-top: 3%;
+    }
+
+    .suscription .container p {
+        font-size: 2rem;
+    }
+
+    .suscription .container .mail {
+        font-size: 2rem;
+    }
+
+    /* suscription alert */
+    .subscription-alert {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+    }
+
+    #close-alert-btn {
+        background-color: #22223B;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    #close-alert-btn a {
+        color: white;
+        text-decoration: none;
+    }
+
+}

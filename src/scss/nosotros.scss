@@ -1,0 +1,23 @@
+@media (min-width:900px){
+    /*nosotros*/
+    .principal h1 {
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+
+    .principal p {
+        padding: 2% 5%;
+        text-align: center;
+    }
+
+    .imagen-nosotros {
+        display: block;
+        margin: auto;
+        width: 60%;
+        height: 20%;
+        margin-bottom: 5%;
+        display: flex;
+        align-items: center;
+    }
+}
