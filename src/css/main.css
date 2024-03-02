@@ -95,6 +95,7 @@
     align-items: center;
     gap: 5rem;
     transition: 0.3s;
+    z-index: 2;
   }
   .nav-links a {
     text-decoration: none;
@@ -328,7 +329,7 @@
   .menu_hamburguesa, .hamburguer {
     display: none;
   }
-  /* Links responsive */
+  /* Links*/
   .nav-links {
     display: flex;
     list-style: none;
