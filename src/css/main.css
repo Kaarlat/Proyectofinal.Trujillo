@@ -84,7 +84,7 @@
     list-style: none;
     width: 100%;
     background-color: #706f6e;
-    position: absolute;
+    position: relative;
     top: var(--altura_header);
     left: 0;
     height: 0;
@@ -340,7 +340,6 @@
     height: auto;
     flex-direction: row;
     gap: 2rem;
-    z-index: 2;
   }
   .nav-links a {
     text-decoration: none;
@@ -506,10 +505,6 @@
   button:hover {
     background-color: #4A4E69;
   }
-  .video {
-    display: flex;
-    margin-left: 40%;
-  }
 }
 @media (min-width: 900px) {
   /*nosotros*/
@@ -538,7 +533,7 @@
     margin-top: 3%;
   }
   .suscription .container p {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .suscription .container .mail {
     font-size: 2rem;
@@ -566,6 +561,22 @@
   #close-alert-btn a {
     color: white;
     text-decoration: none;
+  }
+}
+@media (min-width: 900px) {
+  header {
+    margin-top: 2rem;
+  }
+  header p {
+    font-size: 2rem;
+  }
+  .suscription .container p {
+    margin-top: 2rem;
+  }
+  .col-md-6 p {
+    margin-top: 2%;
+    background-color: rgba(201, 173, 167, 0.3647058824);
+    padding: 0.6rem 1.3rem;
   }
 }
 

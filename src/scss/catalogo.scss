@@ -1,11 +1,16 @@
 @media (min-width:900px){
     header{
-        margin-top: 5rem;
+        margin-top: 2rem;
     }
     header p{
-        font-size: 10rem;
+        font-size: 2rem;
     }
     .suscription .container p{
-        margin-top: 21000px;
+        margin-top: 2rem;
+    }
+    .col-md-6 p{
+        margin-top: 2%;
+        background-color: #c9ada75d;
+        padding: 0.6rem 1.3rem;
     }
 }
