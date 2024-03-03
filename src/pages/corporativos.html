@@ -54,7 +54,48 @@
         </nav>
     </header>
     <!-- Ends Navbar -->
-     
+    <section class="corporativo-inicio">
+        <div class="text-center">
+            <h1>Premios Innovadores: 
+                Regalos Empresariales Impresos en 3D</h1>
+            <p class="web">Explora nuestra selección exclusiva de regalos empresariales impresos en 3D, diseñados para destacar la innovación y el prestigio de tu marca. 
+                Desde trofeos personalizados hasta artículos de escritorio únicos, nuestra colección ofrece opciones memorables para celebrar logros 
+                y reconocer el talento de tu equipo.</p>
+            <p class="mobile">Explora nuestra selección exclusiva de regalos empresariales impresos en 3D, diseñados para destacar la innovación y el prestigio de tu marca.</p>
+        </div>
+        <div class="d-flex justify-content-center">
+            <button class="my-button" type="button" class="btn btn-secondary">
+                <a href="./contacto.html">
+                    COTIZA CON NOSOTROS
+                </a>
+            </button>
+        </div>
+        <div class="carousel">
+            <img src="../imagenes/corp1.jpg" alt="Premio corporativo, macetero blanco impreso en 3D con suculenta y envoltura de cartón con descripción">
+            <img src="../imagenes/corp2.jpg" alt="Figura impresa en 3D de veggeta con rostro personalizado">
+            <img src="../imagenes/corp3.jpg" alt="Variedad de porta-celulares en diferentes colores impresos en 3D">
+            <img src="../imagenes/corp5.jpg" alt="Tres galardones, gris, blanco y dorado personalizables impresos en 3D">
+            <img src="../imagenes/corp6.jpg" alt="Galardón de volcán con lava con base negra, impresos en 3D con placa de vidrio personalizable">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="w-100" src="../imagenes/corp5.jpg" alt="Tres galardones, gris, blanco y dorado personalizables impresos en 3D">
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <p class="text-center">Descubra nuestra variedad de opciones de galardones corporativos impresos en 3D, perfectamente adaptadas para destacar los logros y la excelencia de su empresa. Personalícelos para crear un reconocimiento único y significativo para su equipo.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 d-flex align-items-center">
+                    <p class="text-center">Explore nuestra selección de figuras personalizables impresas en 3D y solicite un presupuesto para crear un producto único que refleje la identidad y visión de su marca.</p>
+                </div>
+                <div class="col-md-4">
+                    <img class="w-100" src="../imagenes/corp2.jpg" alt="Figura impresa en 3D de veggeta con rostro personalizado">
+                </div>
+            </div>
+        </div>
+    </section>
     <!--stars footer-->
     <section class="footer">
         <nav class="link">
@@ -118,5 +159,67 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+    
+        const carousel = document.querySelector('.carousel');
+    
+        carousel.addEventListener('mousedown', handleMouseDown);
+        carousel.addEventListener('touchstart', handleTouchStart);
+        carousel.addEventListener('mouseleave', handleMouseLeave);
+        carousel.addEventListener('mouseup', handleMouseUp);
+        carousel.addEventListener('touchend', handleTouchEnd);
+        carousel.addEventListener('mousemove', handleMouseMove);
+        carousel.addEventListener('touchmove', handleTouchMove);
+    
+        function handleMouseDown(e) {
+            isDown = true;
+            carousel.style.cursor = 'grabbing';
+            startX = e.pageX - carousel.offsetLeft;
+            scrollLeft = carousel.scrollLeft;
+        }
+    
+        function handleTouchStart(e) {
+            const touch = e.touches[0];
+            isDown = true;
+            carousel.style.cursor = 'grabbing';
+            startX = touch.pageX - carousel.offsetLeft;
+            scrollLeft = carousel.scrollLeft;
+        }
+    
+        function handleMouseLeave() {
+            isDown = false;
+            carousel.style.cursor = 'grab';
+        }
+    
+        function handleMouseUp() {
+            isDown = false;
+            carousel.style.cursor = 'grab';
+        }
+    
+        function handleTouchEnd() {
+            isDown = false;
+            carousel.style.cursor = 'grab';
+        }
+    
+        function handleMouseMove(e) {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - carousel.offsetLeft;
+            const walk = (x - startX) * 2;
+            carousel.scrollLeft = scrollLeft - walk;
+        }
+    
+        function handleTouchMove(e) {
+            if (!isDown) return;
+            const touch = e.touches[0];
+            e.preventDefault();
+            const x = touch.pageX - carousel.offsetLeft;
+            const walk = (x - startX) * 2;
+            carousel.scrollLeft = scrollLeft - walk;
+        }
+    </script>
 </body>
 </html>

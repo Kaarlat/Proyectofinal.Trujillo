@@ -8,6 +8,7 @@
   --altura_header: 80px;
   --padding_left_right: 2rem;
   --ancho_maximo: 1200px;
+  --imagen_px: 150px;
 }
 
 * {
@@ -37,7 +38,6 @@
   color: #C9ADA7;
 }
 
-/* Navbar mobile*/
 @media (max-width: 900px) {
   .header {
     height: var(--altura_header);
@@ -54,7 +54,6 @@
     position: relative;
     padding: 0 var(--padding_left_right);
   }
-  /* hamburguer button */
   .menu_hamburguesa {
     display: none;
   }
@@ -64,7 +63,6 @@
   .hamburguer {
     cursor: pointer;
   }
-  /* Logo */
   .logo {
     cursor: pointer;
     max-width: 100%;
@@ -79,13 +77,12 @@
   .logo img:hover {
     transform: scale(1.2);
   }
-  /* Links mobile */
   .nav-links {
     list-style: none;
     width: 100%;
     background-color: #706f6e;
     position: relative;
-    top: var(--altura_header);
+    top: 1.5rem;
     left: 0;
     height: 0;
     overflow: hidden;
@@ -105,7 +102,6 @@
   .icons {
     display: none;
   }
-  /* header mobile */
   .encabezado {
     margin-top: 3%;
     margin-bottom: 2%;
@@ -120,11 +116,9 @@
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  /*productos*/
   .main .cointainer .row {
     padding: 8px 20px;
   }
-  /*promo*/
   .promo {
     margin-top: 3%;
   }
@@ -146,7 +140,6 @@
     border-radius: 1.5rem;
     cursor: pointer;
   }
-  /*suscription*/
   .suscripcion {
     margin-top: 3%;
   }
@@ -156,7 +149,6 @@
   .suscription .container .mail {
     font-size: 2rem;
   }
-  /*Contact*/
   .contact-container {
     background-color: #C9ADA7;
     color: #fff;
@@ -195,24 +187,47 @@
   button:hover {
     background-color: #4A4E69;
   }
-  .video {
-    display: flex;
-    margin-left: 40%;
+  header h1 {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
   }
-  /*nosotros*/
+  header p {
+    font-size: 2rem;
+  }
+  .suscription .container p {
+    margin-top: 2rem;
+    white-space: pre-line;
+  }
+  .col-md-6 p {
+    margin-top: 2%;
+    background-color: rgba(201, 173, 167, 0.3647058824);
+    padding: 0.6rem 1.3rem;
+  }
   .principal h1 {
     text-align: center;
-    margin-top: 5%;
-    margin-bottom: 2%;
+    font-size: 2rem;
+    margin: 2rem;
+    padding: 2%;
+    background-color: antiquewhite;
+    transition: 0.3;
+    cursor: pointer;
+  }
+  .principal h1:hover {
+    transform: scale(1.2);
   }
   .principal p {
-    padding: 2% 5%;
+    padding: 1%;
+    margin: 2rem;
     text-align: center;
+    font-size: 1rem;
+    white-space: pre-line;
+    background-color: rgba(255, 228, 196, 0.348);
   }
   .imagen-nosotros {
     display: block;
     margin: auto;
-    width: 60%;
+    width: 90%;
     height: 20%;
     margin-bottom: 5%;
     display: flex;
@@ -294,6 +309,37 @@
     color: white;
     text-decoration: none;
   }
+  /*corporativos*/
+  .corporativo-inicio h1 {
+    white-space: pre-line;
+    padding: 3%;
+    font-size: 2rem;
+  }
+  .corporativo-inicio .web {
+    display: none;
+  }
+  .carousel {
+    display: flex;
+    overflow-x: hidden;
+    width: 100%;
+    height: 300px;
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .container .row + .row {
+    padding: 2rem;
+  }
+  .col-md-6 p {
+    margin-top: 2%;
+    background-color: rgba(201, 173, 167, 0.3647058824);
+    padding: 0.6rem 1.3rem;
+  }
 }
 @media (min-width: 900px) {
   .header {
@@ -329,7 +375,7 @@
   .menu_hamburguesa, .hamburguer {
     display: none;
   }
-  /* Links*/
+  /* Links responsive */
   .nav-links {
     display: flex;
     list-style: none;
@@ -507,15 +553,25 @@
   }
 }
 @media (min-width: 900px) {
-  /*nosotros*/
   .principal h1 {
     text-align: center;
-    margin-top: 5%;
-    margin-bottom: 2%;
+    font-size: 2.5rem;
+    margin: 2rem;
+    padding: 2%;
+    background-color: antiquewhite;
+    transition: 0.3;
+    cursor: pointer;
+  }
+  .principal h1:hover {
+    transform: scale(1.2);
   }
   .principal p {
-    padding: 2% 5%;
+    padding: 1%;
+    margin: 2rem;
     text-align: center;
+    font-size: 1rem;
+    white-space: pre-line;
+    background-color: rgba(255, 228, 196, 0.348);
   }
   .imagen-nosotros {
     display: block;
@@ -534,6 +590,7 @@
   }
   .suscription .container p {
     font-size: 1.5rem;
+    white-space: pre-line;
   }
   .suscription .container .mail {
     font-size: 2rem;
@@ -577,6 +634,35 @@
     margin-top: 2%;
     background-color: rgba(201, 173, 167, 0.3647058824);
     padding: 0.6rem 1.3rem;
+  }
+}
+@media (min-width: 900px) {
+  .corporativo-inicio h1 {
+    white-space: pre-line;
+    padding: 3%;
+  }
+  .corporativo-inicio p {
+    white-space: pre-line;
+  }
+  .corporativo-inicio .mobile {
+    display: none;
+  }
+  .carousel {
+    display: flex;
+    overflow-x: hidden;
+    width: 100%;
+    height: 300px;
+    cursor: grab;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .container .row + .row {
+    padding: 2rem;
   }
 }
 

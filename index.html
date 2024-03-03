@@ -139,16 +139,19 @@
     </section>
     <!--ends promo-->
     <!--starts suscripción-->
-    <section class="suscripcion">
+    <section class="suscription">
         <div class="container">
-            <p class="text-center">Ten 15% de descuento en tu próxima orden.</p>
-            <p class="text-center">Suscríbete a nuestras actualizaciones.</p>
-            <div class="d-flex justify-content-center align-items-center">
-                <form action="suscripción.php" method="post" class="d-flex">
-                    <label for="Email">Ingresa tu mail</label>
+            <p class="text-center">Ten 15% de descuento en tu próxima orden.
+                Suscríbete a nuestras actualizaciones.
+            </p>
+            <div class="mail">
+                <form class="d-flex justify-content-center" action="suscripción.php" method="post">
+                    <label for="email">Ingresa tu mail</label>
                     <input type="email" name="Email" id="Email" required>
-                    <button class="my-button btn btn-secondary" type="button">
-                        <a href="./src/pages/suscripcion.html">Suscríbete</a>
+                    <button class="my-button" type="button" class="btn btn-secondary">
+                        <a href="./suscripcion.html">
+                            Suscríbete
+                        </a>
                     </button>
                 </form>
             </div>
