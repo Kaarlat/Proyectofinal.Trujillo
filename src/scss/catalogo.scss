@@ -1,16 +1,26 @@
-@media (min-width:900px){
-    header{
+@media (min-width: 900px) {
+    header {
         margin-top: 2rem;
+
+        p {
+            font-size: 2rem;
+        }
     }
-    header p{
-        font-size: 2rem;
+
+    .suscription {
+        .container {
+            p {
+                margin-top: 2rem;
+            }
+        }
     }
-    .suscription .container p{
-        margin-top: 2rem;
-    }
-    .col-md-6 p{
-        margin-top: 2%;
-        background-color: #c9ada75d;
-        padding: 0.6rem 1.3rem;
+
+    .col-md-6 {
+        p {
+            margin-top: 2%;
+            background-color: rgba(201, 173, 117, 0.365);
+            padding: 0.6rem 1.3rem;
+        }
     }
 }
+

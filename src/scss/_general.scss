@@ -1,25 +1,25 @@
-/*font style*/
+// Font style
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-//General
-:root{
-    --color_primario:#14213d;
-    --color_primario_suave:#b0886895;
-    --color_claro:#fca21161;
+// General
+:root {
+    --color_primario: #14213d;
+    --color_primario_suave: #b0886895;
+    --color_claro: #fca21161;
     --altura_header: 80px;
     --padding_left_right: 2rem;
     --ancho_maximo: 1200px;
     --imagen_px: 150px;
 }
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-size: 1.1rem;
 }
 
-// buttons
+// Buttons
 .my-button {
     padding: 10px 20px;
     background-color: rgb(34, 34, 59);
@@ -29,12 +29,13 @@
     cursor: pointer;
     margin-top: 2%;
     margin-left: 25px;
-}
 
-.my-button:hover {
-    transform: scale(1.1);
-}
-.my-button a {
-    text-decoration: none;
-    color: #C9ADA7;
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    a {
+        text-decoration: none;
+        color: #c9ada7;
+    }
 }

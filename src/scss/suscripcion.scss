@@ -1,19 +1,23 @@
-@media (min-width:900px){
-    /*suscription*/
+@media (min-width: 900px) {
     .suscripcion {
         margin-top: 3%;
+
+        .container {
+            p {
+                font-size: 1.5rem;
+                white-space: pre-line;
+            }
+
+            .mail {
+                font-size: 2rem;
+            
+                input[type="email"] {
+                    width: 300px;
+                }
+            }
+        }
     }
 
-    .suscription .container p {
-        font-size: 1.5rem;
-        white-space: pre-line;
-    }
-
-    .suscription .container .mail {
-        font-size: 2rem;
-    }
-
-    /* suscription alert */
     .subscription-alert {
         background: white;
         padding: 20px;
@@ -24,19 +28,19 @@
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 3;
-    }
 
-    #close-alert-btn {
-        background-color: #22223B;
-        color: white;
-        padding: 10px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-    #close-alert-btn a {
-        color: white;
-        text-decoration: none;
-    }
+        #close-alert-btn {
+            background-color: #22223B;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
 
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
 }

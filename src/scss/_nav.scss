@@ -1,89 +1,86 @@
-@media (min-width:900px){
-    .header{
+@media (min-width: 900px) {
+    .header {
         height: var(--altura_header);
         background-color: var(--color_claro);
-    }
 
-    .navbar{
-        height: 100%;
-        display: flex;
-        width: min(1200px, 100%);
-        margin: 0 auto;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-        padding: 0 var(--padding_left_right);
-    }
-    /* Logo */
-    .logo{
-        cursor: pointer;
-        max-width: 100%;
-        margin-right: auto;
-        flex-wrap: wrap;
-    }
+        .navbar {
+            height: 100%;
+            display: flex;
+            width: min(1200px, 100%);
+            margin: 0 auto;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            padding: 0 var(--padding_left_right);
 
-    .logo img{
-        height: 3rem;
-        width: auto;
-        transition: 0.5s;
-    }
+            // Logo
+            .logo {
+                cursor: pointer;
+                max-width: 100%;
+                margin-right: auto;
+                flex-wrap: wrap;
 
-    .logo img:hover{
-        transform: scale(1.2);
-    }
-    /* hamburguer button */
-    .menu_hamburguesa, .hamburguer{
-        display: none;
-    }
-   
-    /* Links responsive */
-    .nav-links{
-        display: flex;
-        list-style: none;
-        background-color: none;
-        margin-top: 1%;
-        position: static;
-        width: auto;
-        height: auto;
-        flex-direction: row;
-        gap: 2rem;
-    }
-    .nav-links a{
-        text-decoration: none;
-        color: var(--color_primario);
-        font-size: 1rem;
-        padding: .2rem .7rem;
-        transition: all .3s;
-    }
-    
-    .nav-links li:hover{
-        transform: scale(1.1);
-    }
-    .icons{
-        display: flex;
-        width: auto;
-        height: auto;
-        flex-direction: row;
-        margin-left: 1%;
-        gap: 1rem;
-    }
-    .search{
-        display: flex;
-        justify-content: center;
-        cursor: pointer;
-    }
+                img {
+                    height: 3rem;
+                    width: auto;
+                    transition: 0.5s;
 
-    .search:hover{
-        transform: scale(1.1);
-    }
-       
-    .shopping{
-        display: flex;
-        justify-content: center;
-        cursor: pointer;
-    }
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
 
-    .shopping:hover{
-        transform: scale(1.1);
+            // Hamburguer button
+            .menu_hamburguesa,
+            .hamburguer {
+                display: none;
+            }
+
+            // Links
+            .nav-links {
+                display: flex;
+                list-style: none;
+                background-color: none;
+                margin-top: 1%;
+                position: static;
+                width: auto;
+                height: auto;
+                flex-direction: row;
+                gap: 2rem;
+
+                a {
+                    text-decoration: none;
+                    color: var(--color_primario);
+                    font-size: 1rem;
+                    padding: 0.2rem 0.7rem;
+                    transition: all 0.3s;
+                }
+
+                li:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+            .icons {
+                display: flex;
+                width: auto;
+                height: auto;
+                flex-direction: row;
+                margin-left: 1%;
+                gap: 1rem;
+            }
+
+            .search,
+            .shopping {
+                display: flex;
+                justify-content: center;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
     }
 }
